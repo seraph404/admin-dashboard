@@ -23,6 +23,9 @@ svg {
   width: 100vw;
   height: 800px;
 }
+
+/* SIDEBAR BEGIN */
+
 .sidebar {
   grid-column: 1 / span 2;
   grid-row: 1 / -1;
@@ -53,10 +56,41 @@ svg {
   list-style-type: none;
   font-weight: 600;
 }
+
+/* SIDEBAR END */
+
+/* HEADER BEGIN */
+
 .header {
-  grid-column: 4 / -1;
+  grid-column: 3 / -1;
   grid-row: 1 / 4;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
 }
+
+.header > * {
+  border: 1px solid black;
+}
+
+.search {
+  grid-column: 1 / 8;
+  grid-row: 1;
+}
+.profile {
+  grid-column: 8 / -1;
+  grid-row: 1;
+}
+.greeting {
+  grid-column: 1 / 8;
+  grid-row: 2;
+}
+.buttons {
+  grid-column: 8 / -1;
+  grid-row: 2;
+}
+
+/* HEADER END */
 .main {
   grid-column: 3 / -1;
   grid-row: 4 / -1;
