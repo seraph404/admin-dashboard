@@ -13,9 +13,9 @@ body {
 svg {
   width: 1.2rem;
   vertical-align: middle;
-  fill: white;
   margin-right: 10px;
 }
+
 .container {
   display: grid;
   grid-template-columns: minmax(180px, 2fr) repeat(13, 1fr);
@@ -36,6 +36,9 @@ svg {
 .sidebar > * {
   /* border: 1px solid white; */
   color: white;
+}
+.sidebar svg {
+  fill: white;
 }
 .logo {
   font-size: 20px;
@@ -67,27 +70,72 @@ svg {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(12, 1fr);
-}
-
-.header > * {
-  border: 1px solid black;
+  padding-left: 30px;
+  padding-right: 50px;
 }
 
 .search {
   grid-column: 1 / 8;
   grid-row: 1;
+  padding: 20px;
+}
+.search input[type="text"] {
+  border-radius: 20px;
+  height: 15px;
+  width: 90%;
+  background-color: #e0e8ef;
+  border: none;
+  padding: 5px;
+}
+.search input:focus {
+  outline: none;
 }
 .profile {
   grid-column: 8 / -1;
   grid-row: 1;
+  font-weight: bold;
+  justify-self: end;
+}
+.profile img {
+  max-width: 70px;
+  vertical-align: middle;
 }
 .greeting {
   grid-column: 1 / 8;
   grid-row: 2;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+}
+.greeting img {
+  max-width: 70px;
+  vertical-align: middle;
+}
+.greeting .greeting {
+  font-size: 12px;
+  display: block;
+  padding-bottom: 5px;
 }
 .buttons {
   grid-column: 8 / -1;
   grid-row: 2;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons button {
+  background-color: #0094d0;
+  border: none;
+  height: 40px;
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* HEADER END */
