@@ -1,10 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-size: 16px;
+}
 * {
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: "Roboto";
+}
+svg {
+  width: 1.2rem;
+  vertical-align: middle;
+  fill: white;
+  margin-right: 10px;
+}
 .container {
   display: grid;
-  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  grid-template: repeat(16, 1fr) / repeat(16, 1fr);
   width: 100vw;
   height: 800px;
 }
@@ -12,6 +26,31 @@
   grid-column: 1 / span 3;
   grid-row: 1 / -1;
   background-color: #0094d0;
+  display: grid;
+  grid-template-rows: 100px 0.5fr 1fr;
+}
+.sidebar > * {
+  /* border: 1px solid white; */
+  color: white;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.logo svg {
+  width: 2rem;
+}
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+.sidebar ul li {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  list-style-type: none;
+  font-weight: 600;
 }
 .header {
   grid-column: 4 / -1;
