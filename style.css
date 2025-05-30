@@ -139,8 +139,37 @@ svg {
 }
 
 /* HEADER END */
+
+/* MAIN BEGIN */
 .main {
   grid-column: 3 / -1;
   grid-row: 4 / -1;
   background-color: #e0e8ef;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
+
+.main > * {
+  border: 1px solid black;
+}
+
+.projects {
+  grid-column: 1 / 5;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.announcements {
+  grid-column: 5 / 7;
+  grid-row: 1 / 4;
+}
+
+.trending {
+  grid-column: 5 / 7;
+  grid-row: 4 / -1;
+}
+/* MAIN END */
