@@ -194,7 +194,9 @@ svg {
   fill: gray;
 }
 
-.projects header {
+.projects header,
+.announcements header,
+.trending header {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -203,10 +205,40 @@ svg {
 .announcements {
   grid-column: 5 / 7;
   grid-row: 1 / 4;
+  padding: 20px;
+}
+
+.announcements-card {
+  background-color: white;
+  box-shadow: 2px 2px 4px 0.1px rgb(202, 202, 202);
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.announcement {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  line-height: 1;
+}
+.announcement:last-child {
+  border-bottom: none;
+}
+.announcement-title {
+  font-weight: bold;
+  font-size: smaller;
+}
+
+.announcement-content {
+  color: gray;
+  font-size: smaller;
 }
 
 .trending {
   grid-column: 5 / 7;
   grid-row: 4 / -1;
+  padding: 20px;
 }
 /* MAIN END */
