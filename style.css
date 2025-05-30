@@ -21,7 +21,7 @@ svg {
   grid-template-columns: minmax(180px, 2fr) repeat(13, 1fr);
   grid-template-rows: repeat(16, 1fr);
   width: 100vw;
-  height: 800px;
+  min-height: 100vh;
 }
 
 /* SIDEBAR BEGIN */
@@ -31,7 +31,7 @@ svg {
   grid-row: 1 / -1;
   background-color: #0094d0;
   display: grid;
-  grid-template-rows: 100px 0.5fr 1fr;
+  grid-template-rows: 100px 300px 1fr;
 }
 .sidebar > * {
   /* border: 1px solid white; */
@@ -157,10 +157,47 @@ svg {
 .projects {
   grid-column: 1 / 5;
   grid-row: 1 / -1;
+  padding: 20px;
+}
+
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(12, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-left: 10px solid orange;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 2px 2px 4px 0.1px rgb(202, 202, 202);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: smaller;
+  color: gray;
+}
+.card-buttons {
+  margin-top: 10px;
+  align-self: flex-end;
+}
+.card-buttons svg {
+  fill: gray;
+}
+
+.projects header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .announcements {
