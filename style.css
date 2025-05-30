@@ -166,8 +166,8 @@ svg {
   grid-row: 3 / -1;
   background-color: #e0e8ef;
   display: grid;
-  grid-template-columns: repeat(12, auto);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .projects {
@@ -217,6 +217,11 @@ svg {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
 }
 
 .announcements {
