@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root {
-  font-size: 16px;
-}
 * {
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: "Roboto";
+  font-size: 1.6rem;
 }
 svg {
   width: 1.2rem;
@@ -18,7 +19,7 @@ svg {
 
 .container {
   display: grid;
-  grid-template-columns: minmax(180px, 1fr) repeat(13, 1fr);
+  grid-template-columns: minmax(200px, 1fr) repeat(13, 1fr);
   grid-template-rows: auto auto 1fr;
   width: 100vw;
   min-height: 100vh;
@@ -41,13 +42,18 @@ svg {
   fill: white;
 }
 .logo {
-  font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
   margin-top: 20px;
 }
+.logo p {
+  vertical-align: middle;
+  font-size: 2.3rem;
+  display: inline;
+}
 .logo svg {
-  width: 2rem;
+  width: 4rem;
+  vertical-align: middle;
 }
 .sidebar ul li a {
   color: white;
@@ -105,14 +111,14 @@ svg {
   grid-row: 2;
   display: flex;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .greeting img {
   max-width: 70px;
   vertical-align: middle;
 }
 .greeting .greeting {
-  font-size: 12px;
+  font-size: 1.2rem;
   display: block;
   padding-bottom: 5px;
 }
@@ -194,7 +200,7 @@ svg {
 .projects header,
 .announcements header,
 .trending header {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -211,7 +217,7 @@ svg {
   box-shadow: 2px 2px 4px 0.1px rgb(202, 202, 202);
   border-radius: 10px;
   padding: 30px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .announcement {
