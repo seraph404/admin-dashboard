@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --gray: rgb(77, 77, 77);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -86,14 +90,19 @@ svg {
 }
 
 .search {
-  grid-column: 1 / 8;
+  grid-column: 1 / 9;
   grid-row: 1;
   padding: 20px;
+  display: flex;
+}
+
+.search svg {
+  width: 2rem;
 }
 .search input[type="text"] {
   border-radius: 20px;
   height: 15px;
-  width: 80%;
+  width: calc(100% - 2rem);
   background-color: #e0e8ef;
   border: none;
   padding: 5px;
@@ -191,15 +200,15 @@ svg {
 }
 
 .card-content {
-  font-size: smaller;
-  color: gray;
+  font-size: 1.4rem;
+  color: rgb(77, 77, 77);
 }
 .card-buttons {
   margin-top: 10px;
   align-self: flex-end;
 }
 .card-buttons svg {
-  fill: gray;
+  fill: var(--gray);
 }
 
 .projects header,
@@ -240,7 +249,7 @@ svg {
 }
 
 .announcement-content {
-  color: gray;
+  color: var(--gray);
   font-size: smaller;
 }
 
@@ -274,7 +283,7 @@ svg {
   font-weight: bold;
 }
 .trending-project-name {
-  color: gray;
+  color: var(--gray);
 }
 /* MAIN END */
 @media (max-width: 768px) {
