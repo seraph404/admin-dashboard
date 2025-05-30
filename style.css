@@ -69,7 +69,7 @@ svg {
   grid-row: 1 / 3;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, auto);
   padding-left: 30px;
   padding-right: 50px;
 }
@@ -82,7 +82,7 @@ svg {
 .search input[type="text"] {
   border-radius: 20px;
   height: 15px;
-  width: 90%;
+  width: 80%;
   background-color: #e0e8ef;
   border: none;
   padding: 5px;
@@ -266,3 +266,37 @@ svg {
   color: gray;
 }
 /* MAIN END */
+@media (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  .greeting {
+    order: 3;
+  }
+  .search {
+    order: 2;
+    padding: 0;
+    margin: 0;
+    align-self: start;
+  }
+  .profile {
+    order: 1;
+    padding: 0;
+    margin: 0;
+  }
+  .buttons {
+    order: 4;
+  }
+
+  .search,
+  .profile,
+  .greeting,
+  .buttons {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+}
