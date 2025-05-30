@@ -209,6 +209,7 @@ svg {
 }
 .card-buttons svg {
   fill: var(--gray);
+  width: 2rem;
 }
 
 .projects header,
@@ -227,7 +228,7 @@ svg {
 .announcements {
   grid-column: 5 / 7;
   grid-row: 1 / 4;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   max-width: 270px;
 }
 
