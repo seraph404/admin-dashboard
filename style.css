@@ -41,6 +41,21 @@ svg {
 .sidebar svg {
   fill: white;
 }
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.sidebar ul li a svg {
+  width: 2rem;
+}
+.sidebar ul li {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  list-style-type: none;
+  font-weight: 600;
+}
+
 .logo {
   font-weight: bold;
   margin-left: 20px;
@@ -54,16 +69,6 @@ svg {
 .logo svg {
   width: 4rem;
   vertical-align: middle;
-}
-.sidebar ul li a {
-  color: white;
-  text-decoration: none;
-}
-.sidebar ul li {
-  margin-bottom: 15px;
-  margin-left: 20px;
-  list-style-type: none;
-  font-weight: 600;
 }
 
 /* SIDEBAR END */
